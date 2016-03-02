@@ -1,0 +1,23 @@
+{
+  "name": "shift-click",
+  "version": "1.0.0",
+  "description": "Allows for shift clicking and selecting elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evolutionarycoder/shift-click.git"
+  },
+  "author": "Daniel M. Prince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evolutionarycoder/shift-click/issues"
+  },
+  "homepage": "https://github.com/evolutionarycoder/shift-click#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}
