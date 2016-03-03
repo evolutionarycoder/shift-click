@@ -3,9 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <title>Shift Click</title>
+        <style>
+            #parent > div {
+                height     : 100px;
+                margin     : 10px;
+                background : #EEE;
+            }
+        </style>
     </head>
     <body>
+        <button id="reset">
+            reset
+        </button>
+        <div id="parent">
+            <div data-ec-selected="false" data-ec-order="1">
+                <p>Daniel Prince</p>
+            </div>
+            <div data-ec-selected="false" data-ec-order="2">
+                <p>Emeka Farrier</p>
+            </div>
+            <div data-ec-selected="false" data-ec-order="3">
+                <p>Micheal Jackson</p>
+            </div>
+            <div data-ec-selected="false" data-ec-order="4">
+                <p>Lil Wayne</p>
+            </div>
+            <div data-ec-selected="false" data-ec-order="5">
+                <p>Lotta wayne</p>
+            </div>
+            <div data-ec-selected="false" data-ec-order="6">
+                <p>Chris Rock</p>
+            </div>
+        </div>
 
         <script src="js/evolutionarycoder.shiftclick.js"></script>
+        <script>
+            // needs three arguments:
+            // the parent of the clickable items
+            // the highlight color
+            // the initial color
+            var shiftClick = ShiftClick("#parent", "#ff4800", "#eee");
+            document.querySelector("#reset").addEventListener("click", function () {
+                // only method used to unselect selected items
+                shiftClick.reset();
+            }, false);
+        </script>
     </body>
 </html>
